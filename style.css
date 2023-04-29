@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgb(34, 34, 34);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Section 1 */
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 190vh;
+    justify-content: center;
+}
+
+.first-page {
+    height: 100vh;
+    display: flex;
+}
+
+li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 40px;
+    padding-bottom: 28%;
+    color: yellow;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    cursor: pointer;
+    font-size: 45px;
+    color: rgb(241, 241, 185);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    margin: 0;
+    position: absolute;
+    right: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(20, 20, 20);
+    height: 78vh;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.list-icon {
+    top: 3%;
+    position: absolute;
+    display: flex;
+    width: 5%;
+    right: 1%;
+    height: 7%;
+    transition: all 0.2s ease;
+}
+
+.list-icon:hover {
+    cursor: pointer;
+    width: 6%;
+    height: 8%;
+    color: wheat;
+}
+
+#main-page {
+    height: 130vh;
+    margin: 0;
+}
+
+#main-page::before {
+    background: url('https://www.wallpapertip.com/wmimgs/108-1088409_information-technology-wallpaper-technology-news.jpg') no-repeat center /cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* img {
+    height: 100%;
+    width: 100%;
+} */
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    color: white;
+    padding-left: 70px;
+    margin: 0;
+    transition: padding-left 0.3s ease;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+h1:hover {
+    padding-left: 40px;
+}
+
+.first {
+    color: yellow;
+    text-decoration: underline;
+    /* width: 15%; */
+}
+
+/* .second {
+    width: 37%;
+} */
+
+span {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease;
+}
+span:hover {
+    color: yellow;
+}
+
+span::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    height: 5px;
+    background: yellow;
+    border-radius: 9999px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+span:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+.para {
+    margin: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    padding-left: 70px;
+    margin-top: 50px;
+    word-spacing: 10px;
+}
+
+.first-para, .second-para {
+    font-family: serif;
+    letter-spacing: 2px;
+}
+
+.text_1 {
+    color: yellow;
+}
+
+
+/* Section 2 */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 130vh;
+    margin-top: 50px;
+    background-color: rgb(37, 37, 37);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.mypic {
+    border-radius: 50%;
+    height: 350px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 60px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    letter-spacing: 5px;
+    padding-top: 10px;
+}
+
+.info {
+    color: white;
+    border: 0;
+    font-size: 30px;
+}
+
+.content-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    width: 25%;
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+
+/* Section 3 */
+.skills {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-top: 100px;
+    height: 130vh;
+}
+
+.cards {
+    display: flex;
+    gap: 100px;
+    /* width: 50%; */
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.card1, .card2, .card3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 25px;
+    color: white;
+    /* margin-top: 40px; */
+    margin: 0;
+    padding-top: 50px;
+    background-color: rgb(12, 12, 12);
+    /* border-radius: 20px; */
+    width: 500px;
+    box-shadow: 4px 4px 8px black;
+}
+
+img {
+    border-radius: 5%;
+    height: 350px;
+    width: 500px;
+}
+
+h2 {
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 15px;
+}
+
+.card-img {
+    height: 350px;
+}
+
+.skills-h {
+    text-align: center;
+}
+
+@media(max-width: 1450px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-img {
+        width: 50%;
+        height: 70%;
+    }
+    .card1, .card2, .card3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-text {
+        width: 50%;
+    }
+    .info {
+        display: flex;
+        width: 400px;
+    }
+    img {
+        width: 50%;
+        height: 70%;
+    }
+    .content-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+        width: 450px;
+        background-color: rgb(63, 63, 63);
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px black;
+    }
+}
